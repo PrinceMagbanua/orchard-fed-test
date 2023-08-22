@@ -7,6 +7,9 @@ body {
 .title-thin-1{
     font-weight: 200;
     font-size: 1.8em;
+    @media (max-width: 600px) {
+        font-size: 1.4em;
+    }
 }
 
 .title-thin-2{
@@ -22,6 +25,11 @@ body {
     font-size:1.2em;
     line-height:1.7em;
 }
+.title-medium-2{
+    font-weight: 400;
+    font-size:1.25em;
+    line-height:1.7em;
+}
 
 .content-thin-1{
     font-family: 'Open Sans';
@@ -29,6 +37,14 @@ body {
     font-size:1.2em;
     line-height:1.6em;
     color: #c2c2c2;
+}
+
+.content-thin-0{
+    font-family: 'Open Sans';
+    font-weight: 100;
+    font-size: 1em;
+    line-height:2em;
+    color: #acacac;
 }
 
 .red-text{
