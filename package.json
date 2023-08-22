@@ -2,7 +2,7 @@
   "name": "orchard-fed-test",
   "version": "0.0.1",
   "description": "Orchard FED Test Website Built with Quasar",
-  "productName": "Orchard FED Test",
+  "productName": "AEG - Orchard FED Test",
   "author": "PrinceMagbanua <pcimagbanua@gmail.com>",
   "private": true,
   "scripts": {

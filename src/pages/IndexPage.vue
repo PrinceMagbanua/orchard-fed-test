@@ -6,17 +6,17 @@
 
           <div class="row col-xs-12 col-md-8 q-px-sm q-mb-md" style="max-height:600px;">
             <div class="col-6">
-              <q-img src="resources/component-one/Image-01.jpg" style="max-height:570px;" >       
-              </q-img>
+              <DialogImgVue src="resources/component-one/Image-01.jpg" style="max-height:570px;" >       
+              </DialogImgVue>
             </div>
             <div class="col-6 row q-pl-md items-between">
               <div class="col-12 q-pb-md">
-                <q-img src="resources/component-one/Image-02.jpg" style="max-height:290px;">       
-                </q-img>
+                <DialogImgVue src="resources/component-one/Image-02.jpg" style="max-height:290px;">       
+                </DialogImgVue>
               </div>
               <div class="col-12 row items-end">
-                <q-img src="resources/component-one/Image-03.jpg" style="max-height:290px;">       
-                </q-img>
+                <DialogImgVue src="resources/component-one/Image-03.jpg" style="max-height:290px;">       
+                </DialogImgVue>
               </div>
             </div>
           </div>
@@ -58,10 +58,11 @@ import { defineComponent, ref } from 'vue';
 import card1Img from '/resources/component-two/Image-01.jpg';
 import card2Img from '/resources/component-two/Image-02.jpg';
 import card3Img from '/resources/component-two/Image-03.jpg';
+import DialogImgVue from 'src/components/DialogImg.vue';
 
 export default defineComponent({
   name: 'IndexPage',
-  components: { CardList },
+  components: { CardList, DialogImgVue },
   setup () {
     const componentOneTitle = ref<String>("Answer Your Body's Needs");
     const componentOneDesc = ref<String>("The way ingredients are sourced affects the way we nourish our bodies. Author Mark Schatzer believes our body naturally develops an appetite for the foods and nutrients it needs to be healthy, but that artificial flavourings are getting in the way. This can be reversed by focusing on high-quality ingredients and being mindful as your appetite guides you to consume according to your body's needs.");
