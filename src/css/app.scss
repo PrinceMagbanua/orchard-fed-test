@@ -3,3 +3,34 @@
 body {
     font-family: 'Open Sans'
 }
+
+.title-thin-1{
+    font-weight: 200;
+    font-size: 1.8em;
+}
+
+.title-thin-2{
+    font-weight: 200;
+    font-size: 2.6em;
+    @media (max-width: 600px) {
+        font-size: 1.8em;
+    }
+}
+
+.title-medium-1{
+    font-weight: 400;
+    font-size:1.2em;
+    line-height:1.7em;
+}
+
+.content-thin-1{
+    font-family: 'Open Sans';
+    font-weight: 100;
+    font-size:1.2em;
+    line-height:1.6em;
+    color: #c2c2c2;
+}
+
+.red-text{
+    color:#cf1430;
+}
