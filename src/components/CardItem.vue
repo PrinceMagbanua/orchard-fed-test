@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-12 q-pb-lg">
-      <DialogImg :src="item.image" class="latest-bottom-line"></DialogImg>
+      <DialogImg :src="item.image" :alt="item.imageAlt" class="latest-bottom-line"></DialogImg>
     </div>
     <a @click="console.log('redirecting to: '+item.title)" class="col-shrink title-medium-2 q-pb-xs line-animation cursor-pointer">
       {{ item.title }}

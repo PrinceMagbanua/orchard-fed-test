@@ -6,16 +6,16 @@
 
           <div class="row col-xs-12 col-md-8 q-px-sm q-mb-md" style="max-height:600px;">
             <div class="col-6">
-              <DialogImgVue src="resources/component-one/Image-01.jpg" style="max-height:570px;" >       
+              <DialogImgVue src="resources/component-one/Image-01.jpg" alt="Adult male person, holding hands with child, walking through grass" style="max-height:570px;" >       
               </DialogImgVue>
             </div>
             <div class="col-6 row q-pl-md items-between">
               <div class="col-12 q-pb-md">
-                <DialogImgVue src="resources/component-one/Image-02.jpg" style="max-height:290px;">       
+                <DialogImgVue src="resources/component-one/Image-02.jpg" alt="random fruits on a bowl, some are rotten, some are not" style="max-height:290px;">       
                 </DialogImgVue>
               </div>
               <div class="col-12 row items-end">
-                <DialogImgVue src="resources/component-one/Image-03.jpg" style="max-height:290px;">       
+                <DialogImgVue src="resources/component-one/Image-03.jpg" alt="four whole asparagi parallel to each other" style="max-height:290px;">       
                 </DialogImgVue>
               </div>
             </div>
@@ -28,7 +28,7 @@
             <div class="content-thin-1 component-one-desc">
               {{ componentOneDesc }}
             </div>
-            <div class="red-text q-pt-xl text-uppercase row justify-start col-12 q-pt-md q-pb-md">
+            <div class="text-primary q-pt-xl text-uppercase row justify-start col-12 q-pt-md q-pb-md">
               Be Mindful
             </div>
             <div class="col-12 title-medium-1">
@@ -71,16 +71,19 @@ export default defineComponent({
       //load api store here
       {
         image: card1Img,
+        imageAlt:'various foods - shrimp and vedgetables - on plates',
         title:'Summer Lunch Menu By Mark Best',
         shortDesc:`AEG ambassador Mark best's summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.`
       },
       {
         image: card2Img,
+        imageAlt:'carrots and a whole toasted chicken on black plates',
         title:'A Traditinal Christmas Eve, Mark best Style',
         shortDesc:`One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Even menu which is sure impress your guests.`
       },
       {
         image: card3Img,
+        imageAlt:'a pot of meat and vegetables',
         title:'Taking Taste Further',
         shortDesc:`This exclusive cookbook gives you all the know how you need. We've designed it to make sure you get the most out of our products - and the best out of your food.`
       }
