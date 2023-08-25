@@ -38,7 +38,7 @@
         </div>
 
         
-        <div class="component-two col-12 items-start row q-pa-md">
+        <div class="component-two justify-center col-12 items-start row q-pa-md">
           <div class="title-thin-2 text-uppercase col-12 text-center q-pb-xl">
              All the latest from AEG
           </div>
