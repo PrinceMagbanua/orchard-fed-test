@@ -1,6 +1,10 @@
 # Orchard FED Test (orchard-fed-test)
 
-Orchard FED Test Website Built with Quasar
+Orchard FED Test Website Built with Quasar you can access the deployed github pages website from here:
+
+https://princemagbanua.github.io/orchard-fed-test/#/
+
+and to deploy it in your own workstation just follow the steps below,
 
 ## Install the dependencies
 ```bash
