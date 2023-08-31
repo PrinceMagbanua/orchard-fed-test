@@ -4,17 +4,17 @@
 
         <div class="component-one col-12 items-start row q-pa-md ">
 
-          <div class="row col-xs-12 col-md-8 q-px-sm q-mb-md" style="max-height:600px;">
+          <div :class="`row col-xs-12 col-md-8 q-px-sm q-mb-md ${$q.screen.lt.md?'q-px-md':''}`" style="max-height:600px;">
             <div class="col-6">
               <DialogImgVue src="resources/component-one/Image-01.jpg" alt="Adult male person, holding hands with child, walking through grass" style="max-height:570px;" >       
               </DialogImgVue>
             </div>
             <div class="col-6 row q-pl-md items-between">
-              <div class="col-12 q-pb-md">
+              <div class="col-12 q-pb-md row items-stretch">
                 <DialogImgVue src="resources/component-one/Image-02.jpg" alt="random fruits on a bowl, some are rotten, some are not" style="max-height:290px;">       
                 </DialogImgVue>
               </div>
-              <div class="col-12 row items-end">
+              <div class="col-12 row items-stretch">
                 <DialogImgVue src="resources/component-one/Image-03.jpg" alt="four whole asparagi parallel to each other" style="max-height:290px;">       
                 </DialogImgVue>
               </div>

@@ -1,20 +1,20 @@
 <template>
-  <div class="row">
+  <a @click="console.log('redirecting to: '+item.title)" class="row col-12 cursor-pointer">
     <div class="col-12 q-pb-lg">
-      <DialogImg :src="item.image" :alt="item.imageAlt" class="latest-bottom-line"></DialogImg>
+      <q-img :src="item.image" :alt="item.imageAlt" class="latest-bottom-line"></q-img>
     </div>
-    <a @click="console.log('redirecting to: '+item.title)" class="col-shrink title-medium-2 q-pb-xs line-animation cursor-pointer">
+    <a @click="console.log('redirecting to: '+item.title)" class="col-shrink title-medium-2 q-pb-xs cursor-pointer">
       {{ item.title }}
     </a>
     <div class="col-12 content-thin-0 card-item-content">
       {{ item.shortDesc }}
     </div>
-    <div class="col-shrink row relative-position q-mt-md q-mb-xl cursor-pointer" @click="console.log('redirecting to: '+item.title)">
+    <div class="col-shrink row relative-position q-mt-md q-mb-xl cursor-pointer">
       <a class="col-shrink q-px-xs title-medium-0 text-link text-uppercase q-py-sm link-animation">
         Read More
       </a>
     </div>
-  </div>
+  </a>
 </template>
 
 <script lang="ts">

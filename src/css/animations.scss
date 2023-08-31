@@ -1,31 +1,4 @@
-/* fill-up animation for the read more links */
-.link-animation:before {
-    background-color: $primary;
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    top: 100%;
-    content: "";
-    z-index: -1;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
-}
-.link-animation:hover:before {
-    top: 0;
-}
-.link-animation:hover{
-    transition:0.3s;
-}
-.link-animation:after {
-    position: absolute;
-    right: 2rem;
-    top: 50%;
-    -webkit-transform: translateY(-50%) translateX(50%);
-    -ms-transform: translateY(-50%) translateX(50%);
-    transform: translateY(-50%) translateX(50%);
-}
+
 
 /* underline animation for title links */
 
@@ -59,4 +32,94 @@
 .grow-hvr:hover {
     transform: scale(1.05);
     cursor: pointer;
+}
+
+$box-hvr-color: #ffffff09;
+.box-hvr{
+    padding: 10px;
+    float:left;
+    position:relative;
+    border-collapse:collapse;
+    text-decoration:none;
+    margin:0 0px;
+    transition: transform 0.2s;  
+
+    
+    &:before{
+      z-index:-1;
+      transition: all 0.2s;  
+      position:absolute;
+      content:"";
+      width:100%;
+      height:0%;
+      left:50%;
+      margin-left:-50%;
+      top:50%;
+      border-color:rgba(255, 0, 0, 0.509);
+      border-style:solid;
+      border-width:0 1px;
+    }
+    
+    &:after{
+      z-index:-1;
+      transition: all 0.2s;  
+      position:absolute;
+      content:"";
+      width:0%;
+      height:100%;
+      left:50%;
+      margin-left:-0%;
+      top:0;
+      border-color:rgba(0, 0, 0, 0.386);
+      border-style:solid;
+      border-width:1px 0;
+    }
+    
+    &:hover{
+        transform:translate(-2px,-2px);
+        // transferred link-animation here
+        .link-animation:before {
+            top: 0;
+        }
+        .link-animation{
+            top: 0;
+            transition:0.3s;
+        }
+        &:after{
+            z-index:-1;
+            width:100%;
+            margin-left:-50%;
+            border-color:$box-hvr-color;
+        }
+        
+        &:before{
+            z-index:-1;
+            height:100%;
+            top:0%;
+            border-color:$box-hvr-color;
+        }
+    }
+    .link-animation:before {
+        background-color: $primary;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        top: 100%;
+        content: "";
+        z-index: -1;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    .link-animation:after {
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%) translateX(50%);
+        -ms-transform: translateY(-50%) translateX(50%);
+        transform: translateY(-50%) translateX(50%);
+    }
+    
 }
