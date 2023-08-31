@@ -1,6 +1,6 @@
 <template>
-  <div class="col-12 q-col-gutter-lg q-pl-sm q-pb-sm row justify-center">
-    <CardItem class="col-xs-12 col-sm-6 col-md-4" 
+  <div :class="`col-12 q-pb-sm q-px-sm row justify-center ${$q.screen.lt.md?'':'q-col-gutter-lg'}`">
+    <CardItem class="col-xs-12 col-md-4 box-hvr" 
       v-for="card,idx in cards" 
       :key="idx+'_cardListKey'"
       :item="card"
